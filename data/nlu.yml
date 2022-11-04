@@ -170,7 +170,7 @@ nlu:
 
 
 - intent: covid_symptoms
-examples:
+  examples:
     - Headache  
     - Cough
     - Fever
@@ -184,28 +184,30 @@ examples:
     - Tiredness
 
 - intent: Length_of_symptoms
-examples:
+  examples:
     - 1-2 days
     - 2-4 days
     - 4-7 days
     - more than 1 week
 
-- intent: ontact_history
+- intent: contact_history
+  examples:
     - primary
     - secondary
     - none of these
 
-## intent:list_of_events
--Meetings
--marriage function
--Birthday party
--Receptions
--Farewell Party
- -Railway station
- -Bus station
- -Airport
- -Religious centers
- -Metro stations
+- intent: list_of_events
+  examples:
+    -Meetings
+    -marriage function
+    -Birthday party
+    -Receptions
+    -Farewell Party
+    -Railway station
+    -Bus station
+    -Airport
+    -Religious centers
+    -Metro stations
 
 
 ## intent:mode_of_test
