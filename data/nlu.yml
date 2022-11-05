@@ -27,12 +27,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
     - of course
     - that sounds good
     - correct
@@ -45,7 +39,12 @@ nlu:
     - thanks a lot
     - thank you very much
 
-    
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+ 
 
 - intent: deny
   examples: |
@@ -56,56 +55,22 @@ nlu:
     - don't like that
     - no way
     - not really
+    - don't know
 
-- intent: mood_great
+- intent: mobile_no
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - 9564822445
+    - 8456231245
+    - 7589698642
+    - 6547897847
 
-- intent: mood_unhappy
+- intent: user_info
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
-
-- intent: info_nag
-  examples: |
-    - asha, 25, female
-    - ben,45, male
-    - mary,31,transgender
+    - asha-25-female
+    - ben-45-male
+    - mary-31-transgender
     - neethu, 46, -
     - xyz 32 na
-
 
 - intent: Vaccination
     examples: 
@@ -117,7 +82,7 @@ nlu:
 - intent: diseases_on_medication
     examples: 
     - Diabetics
-    - Asthma
+    - Respiratory disease
     - BP
     - Lung disease
     - Cancer
@@ -139,7 +104,7 @@ nlu:
     - Heart disease
     - Other
 
-- intent: allergy_medicine 
+- intent: allergetic_medicine 
   examples:
     - Penicillin
     - amoxicillin
@@ -149,25 +114,24 @@ nlu:
     - aspirin
     - naproxen
     - sulfa drugs
-    -chemotherapy drugs
-    -cetuximab 
-    -erbitux 
-    -rituximab
-    -HIV drugs 
-    -abacavir 
-    -nevirapine
-    -Insulin
-    -antiseizure drugs
-    -carbamazepine
-    -tegretol 
-    -lamotrigine 
-    -lamictal
-    -phenytoin
-    -Muscle relaxers
-    -atracurium
-    -succinylcholine
-    -vecuronium
-
+    - chemotherapy drugs
+    - cetuximab 
+    - erbitux 
+    - rituximab
+    - HIV drugs 
+    - abacavir 
+    - nevirapine
+    - Insulin
+    - antiseizure drugs
+    - carbamazepine
+    - tegretol 
+    - lamotrigine 
+    - lamictal
+    - phenytoin
+    - Muscle relaxers
+    - atracurium
+    - succinylcholine
+    - vecuronium
 
 - intent: covid_symptoms
   examples:
@@ -196,31 +160,47 @@ nlu:
     - secondary
     - none of these
 
+- intent: family_member_symptoms 
+  examples:
+    - Yes
+    - No
+
 - intent: list_of_events
   examples:
-    -Meetings
-    -marriage function
-    -Birthday party
-    -Receptions
-    -Farewell Party
-    -Railway station
-    -Bus station
-    -Airport
-    -Religious centers
-    -Metro stations
+    - Meetings
+    - marriage function
+    - Birthday party
+    - Receptions
+    - Farewell Party
+    - Railway station
+    - Bus station
+    - Airport
+    - Religious centers
+    - Metro stations
+    - Others
+    - None
+intent: covid_test
+examples:
+  - Yes
+  - No
 
+intent: mode_of_test
+examples:
+  - self
+  - Laboratory
 
-## intent:mode_of_test
-- self
-- Laboratory
+intent: test_result
+examples:
+  - positive
+  - Negative
 
-## intent:Test_result
-- positive
-- Negative
-
-## intent:Medicine_currently_using
--
--
--
--
--
+intent: ongoing_medication
+examples:
+  - Azithromizine
+  - dolo
+  - vitamins
+  - probiotics
+  - ibuprofen
+  - aspirin
+  - antibiotics
+  - paracetamol
